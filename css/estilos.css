@@ -1,0 +1,262 @@
+/*
+Autor: Jabier Zurro Aduriz
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea Evaluativa 2 - Sitio Web
+Pagina css para dar estilo al Sitio Web
+*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1%;
+    padding-left: 3%;
+    width: 150px;
+    height:500px;
+    background-color: lightblue;
+    border-radius:0.5em;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    border-radius: 0.5em;
+    background-color: lightblue;
+    margin-left: .5em;
+    font-size: 1em;
+}
+
+footer {
+    /*Centrar el footer en la pagina*/
+    text-align: center;
+}
+
+form {
+    /* Centrar el formulario en la pagina */
+    margin: 0 auto;
+    width: 25em;
+    /* Esquema del formulario */
+    padding: 2em;
+    border: 0.063em solid lightblue;
+    border-radius: 1em;
+}
+
+form li + li {
+    /* Crear margen entre los elementos de la lista del formulario */
+    margin-top: 1em;
+}
+
+header {
+    /* Cambiar el color del fondo del header, anchura, centrar el texto y anadir padding */
+    background-color:white;
+    width:100%;
+    text-align:center;
+    padding: 1%;
+}
+
+
+h1 {
+    /* Cambiar la fuente de los h1 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    /* Alinear los h2 en el centro*/
+    text-align: center;
+}
+
+input:focus,
+textarea:focus {
+   /* Destacado adicional para elementos que tienen el cursor */
+   border-color: #000;
+}
+
+input, textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuracion de letra
+       Por defecto, las areas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 18.75em;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 0.063em solid #999;
+    background-color: lightblue;
+}
+
+label {
+    /* Tamaño, fuente y alineacion uniforme */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width: 5.625em;
+    text-align: right;
+}
+  
+main article {
+    /* Cambiar la posicion estatica de las etiquetas <article> del <main> a relativa*/ 
+    position: relative;
+    padding: 1%;
+}
+
+nav {
+    /* Posicionamiento de los elementos del menu de navegacion*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-end
+    
+}
+
+nav ul {
+    /* Posicionamiento de los elementos de la etiqueta <ul> dentro del menu de navegacion */
+    display: flex;
+    flex-direction: row;
+    padding: 0.813em;
+}
+
+nav ul li {
+    /* Posicionamiento de los elementos <li> dentro de la etiqueta <ul> que a su vez estan dentro del menu de navegacion */
+    padding: 0.400em;
+}
+
+nav ul li a {
+    /* Dar forma a los enlaces del menu de navegacion */
+    padding-top: 0.813em;
+    text-decoration:none;
+    border:0.063em solid lightblue;
+    border-radius: 0.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25em;
+    padding: 0.625em;
+}
+
+nav ul li a:hover {
+    /* Resaltar los elementos al pasar el cursor por encima */
+    background:#6e6e6e;
+    color:white;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+   
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+ }
+
+ul {
+    /* Dar estilo a las listas desordenadas */
+    list-style: none;
+}
+
+.button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 5.625em; /* mismo tamaño que los elementos de la etiqueta */
+ }
+
+ /* Contenedor para agrupar los iconos de las diferentes RRSS */
+.contenedor-icono {
+	width: 50%;
+}
+
+/* Para quitar el float de las imagenes */
+.fin-float {
+    clear:left;
+}
+
+/* Dar anchura maxima a las imagenes de los iconos */
+.icono {
+	width: 50px;
+}
+
+
+/* Dar anchura maxima a las imagenes de la pagina categorias */
+.imagen-categorias {
+    width: 500px;
+}
+
+/* Aplicar float a las imagenes*/
+.imagen-float {
+    padding-right: 1%;
+    width: 300px;
+    float: left;
+}
+
+/* Cambiar disposicion de imagen principal, aplicar margenes y anchura maxima */
+.imagen-principal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+/* Aplicar atributos a las secciones principales de las distintas paginas */
+.seccion-principal {
+    display: flex;
+    flex-direction: row;
+    padding: 1.563em;
+    border: 0.063em solid lightblue;
+    border-radius:0.5em;
+}
+
+/* Centrar el texto */
+.texto-centro {
+    text-align: center;
+}
+
+/* Modificar el contenedor de iconos en un lugar especifico */
+#contenedor-iconos {
+	flex-basis: 8%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+/* Modificar el contenedor de la pagina categorias */
+#seccion-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.563em;
+    border: 0.063em solid lightblue;
+    border-radius:0.5em;
+} 
+
+/* Modificar el contenedor de la pagina noticias */
+#seccion-noticias {
+    display: flex;
+    flex-direction: column;
+    padding: 1.563em;
+    border: 0.063em solid lightblue;
+    border-radius:0.5em;
+}
+
+/* Posicionamiento del texto accesorios en la pagina categorias */
+#texto-accesorios {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+/* Posicionamiento del texto flautas en la pagina categorias */
+#texto-flautas {
+    position:absolute;
+    top: 35%;
+    left: 40%;
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Posicionamiento del texto partituras en la pagina categorias */
+#texto-partituras {
+    position:absolute;
+    top: 40%;
+    left: 40%;
+}
